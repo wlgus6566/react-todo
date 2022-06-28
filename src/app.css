@@ -3,17 +3,24 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-family: 'Anek Latin', sans-serif;
+}
 #root {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 30px;
 }
+.fa-bag-shopping {
+  color: hotpink;
+}
 .wrap {
-  background: antiquewhite;
-  padding: 30px 20px;
+  background-color: #ffe6e9;
+  padding: 30px 30px;
   border-radius: 20px;
   margin: 0 auto;
+  width: 390px;
 
 }
 ul {
@@ -45,16 +52,24 @@ button {
   padding: 10px 60px;
   text-align: right;
 }
-
+.add-form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
 .add-input {
-  margin-right: 0.2em;
+  flex: 1 0 auto;
+  margin-right: 12px;
+  padding: 10px 20px;
+  font-size: 14px;
 }
 
 .add-button {
   height: 100%;
-  padding: 0.3em 0.5em;
+  padding: 10px 20px;
   background-color: green;
   color: white;
+  font-size: 14px;
 }
 .habit-list {
   margin-top: 30px;
@@ -67,17 +82,20 @@ button {
   list-style: none;
   border-bottom: 1px solid gray;
 }
-
+.right {
+  display: flex;
+  align-items: center;
+}
 .habit-count {
   display: inline-block;
   text-align: center;
-  font-size: 2rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   margin-left: 0.2em;
   margin-right: 0.5em;
-  background-color: darkseagreen;
+  background-color: #9075d5;
   color: white;
   border-radius: 50%;
 }
@@ -103,8 +121,10 @@ button {
 }
 
 .habits-reset {
-  font-size: 1.5rem;
-  padding: 0.2em 1em;
+  font-size: 20px;
   background-color: green;
   color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
 }

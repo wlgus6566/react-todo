@@ -5,8 +5,8 @@ class Navbar extends Component {
     return (
       <>
         <div className="navbar">
-          <i className="navbar-logo fas fa-leaf"></i>
-          <span>TODAY'S CHECK LIST🖍📋</span>
+          <i className="fa-solid fa-bag-shopping"></i>
+          <span> Shopping List🖍📋</span>
         </div>
         <span className="navbar-count">TOTAL: {this.props.totalCount} 개</span>
       </>

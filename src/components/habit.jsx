@@ -14,9 +14,11 @@ class Habit extends Component {
     const { name, count } = this.props.habit;
     return (
       <li className="habit">
-        <span className="habit-name">{name}</span>
-        <span className="right">
+        <div className="left">
+          <span className="habit-name">{name}</span>
           <span className="habit-count">{count}</span>
+        </div>
+        <span className="right">
           <button className="habit-button habit-increase" onClick={this.handleIncrement}>
             <i className="fas fa-plus-square"></i>
           </button>
