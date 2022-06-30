@@ -14,6 +14,7 @@ class HabitAddForm extends PureComponent {
       <form ref={this.formRef} className="add-form" onSubmit={this.onSubmit}>
         <input
           ref={this.inputRef}
+          minLength="1"
           type="text"
           placeholder="write to buy..."
           className="add-input"

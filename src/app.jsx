@@ -4,11 +4,7 @@ import Habits from './components/habits';
 import Navbar from './components/navbar';
 class App extends Component {
   state = {
-    habits: [
-      { id: 1, name: 'Reading', count: 0 },
-      { id: 2, name: 'Running', count: 0 },
-      { id: 3, name: 'Coding', count: 0 },
-    ],
+    habits: [],
   };
   handleIncrement = (habit) => {
     const habits = [...this.state.habits];
@@ -20,6 +16,10 @@ class App extends Component {
     const habits = [...this.state.habits];
     const index = habits.indexOf(habit);
     const count = habits[index].count - 1;
+    if (count < 0) {
+      alert('0개 이하로 줄일 수 없습니다.');
+      return;
+    }
     habits[index].count = count < 0 ? 0 : count;
     this.setState({ habits });
   };

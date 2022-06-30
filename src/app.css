@@ -5,23 +5,44 @@
 }
 body {
   font-family: 'Anek Latin', sans-serif;
+
 }
 #root {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  padding: 30px 20px;
+  width: 450px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin: 30px auto;
+}
+#root::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: url('./images/t-image-img-paper-cut-60.svg') no-repeat center/cover;
 }
 .fa-bag-shopping {
   color: hotpink;
 }
 .wrap {
-  background-color: #ffe6e9;
+  background-color: #ece2ff69;
   padding: 30px 30px;
   border-radius: 20px;
   margin: 0 auto;
   width: 390px;
 
+}
+.fa-bag-shopping {
+  color: #ff89e1;
+  font-size: 39px;
+  vertical-align: middle;
+  margin-right: 5px;
 }
 ul {
   padding: 0;
@@ -39,6 +60,18 @@ button {
 .navbar {
   font-size: 30px;
   padding: 10px;
+  position: relative;
+  z-index: 1;
+}
+.navbar:after {
+  content: '';
+  position: absolute;
+  width: 78%;
+  height: 16px;
+  background: #dfd3ff;
+  bottom: 12px;
+  left: 44px;
+  z-index: -1;
 }
 
 .navbar-logo {
@@ -77,14 +110,11 @@ button {
 .habit {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 25px;
   padding: 10px;
   list-style: none;
   border-bottom: 1px solid gray;
-}
-.right {
-  display: flex;
-  align-items: center;
 }
 .habit-count {
   display: inline-block;
