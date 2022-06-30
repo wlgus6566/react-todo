@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-todo/static/css/main.7c1e329d.css",
+    "main.js": "/react-todo/static/js/main.0b01943e.js",
+    "index.html": "/react-todo/index.html",
+    "static/media/t-image-img-paper-cut-60.svg": "/react-todo/static/media/t-image-img-paper-cut-60.7eef75109b762a94e925.svg",
+    "main.7c1e329d.css.map": "/react-todo/static/css/main.7c1e329d.css.map",
+    "main.0b01943e.js.map": "/react-todo/static/js/main.0b01943e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c1e329d.css",
+    "static/js/main.0b01943e.js"
+  ]
+}
